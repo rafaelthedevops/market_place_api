@@ -22,6 +22,7 @@ gem 'puma', '~> 3.0'
 
 gem 'active_model_serializers'
 
+gem 'devise'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -34,7 +35,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-group :test do
+group :test, :development do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'ffaker'
